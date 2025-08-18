@@ -11,6 +11,6 @@ class User(AbstractUser):
 class UserSerializer(ModelSerializer):
     class Meta:
         model = User
-        fields = ['username', 'password','phone']
+        fields = ['username', 'password','phone','is_staff']
 
 
